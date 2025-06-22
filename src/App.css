@@ -1,10 +1,13 @@
 .App {
   text-align: center;
+  padding: 1rem;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20,12 +23,40 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 2rem;
+  font-size: calc(12px + 1.5vmin);
   color: white;
+  text-align: center;
+}
+
+/* Responsive typography and layout for smaller screens */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(12px + 2vmin);
+    padding: 1.5rem;
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(14px + 2vmin);
+    padding: 1rem;
+  }
+
+  .App-logo {
+    height: 25vmin;
+  }
 }
 
 .App-link {
   color: #61dafb;
+  font-size: 1rem;
+  text-decoration: none;
+  word-break: break-word;
 }
 
 @keyframes App-logo-spin {
